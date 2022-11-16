@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Box box = new Box();
         box.length = 10;
-        box.height = 10;
+        box.height = 20;
         box.width = 10;
-        System.out.println(box.volume());
+        box.showVolume();
 
         Person man = new Person();
         Person woman = new Person();
@@ -25,5 +25,13 @@ public class Main {
         child.weight = 20.3;
 
         System.out.println((man.age + woman.age + child.age) / 3);
+
+        Dog dog = new Dog();
+        dog.name = "Spike";
+        dog.breed = "bulldog";
+        dog.weight = 20;
+        dog.speed = 5;
+        System.out.println(dog.getInfo());
+        dog.run();
     }
 }

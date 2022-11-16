@@ -5,7 +5,11 @@ public class Box {
     double width;
     double height;
 
-    public double volume() {
+    double getVolume() {
         return length * width * height;
+    }
+
+    void showVolume() {
+        System.out.println(getVolume());
     }
 }
