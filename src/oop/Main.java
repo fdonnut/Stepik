@@ -2,9 +2,10 @@ package oop;
 
 public class Main {
     public static void main(String[] args) {
-        Box box = new Box();
-        box.setDimens(10, 20, 10);
-        box.showVolume();
+        Box box1 = new Box(10, 20, 30);
+        box1.showVolume();
+        Box box2 = new Box();
+        box2.showVolume();
 
         Person man = new Person();
         Person woman = new Person();
@@ -35,5 +36,8 @@ public class Main {
         Rectangle rect = new Rectangle();
         rect.setDimens(30, 40);
         rect.getArea();
+
+        Employee employee = new Employee("john", "driver", 100_000);
+        employee.showInfo();
     }
 }
