@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Box box1 = new Box(10, 20, 30);
         box1.showVolume();
-        Box box2 = new Box();
+        Box box2 = new Box(5);
         box2.showVolume();
 
         Person man = new Person();
@@ -39,5 +39,10 @@ public class Main {
 
         Employee employee = new Employee("john", "driver", 100_000);
         employee.showInfo();
+
+        System.out.println(MyMath.multiple(10,5));
+
+        Monster monster = new Monster();
+        monster.voice();
     }
 }
