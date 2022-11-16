@@ -3,9 +3,7 @@ package oop;
 public class Main {
     public static void main(String[] args) {
         Box box = new Box();
-        box.length = 10;
-        box.height = 20;
-        box.width = 10;
+        box.setDimens(10, 20, 10);
         box.showVolume();
 
         Person man = new Person();
@@ -33,5 +31,9 @@ public class Main {
         dog.speed = 5;
         System.out.println(dog.getInfo());
         dog.run();
+
+        Rectangle rect = new Rectangle();
+        rect.setDimens(30, 40);
+        rect.getArea();
     }
 }
