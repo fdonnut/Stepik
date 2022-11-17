@@ -7,23 +7,11 @@ public class Main {
         Box box2 = new Box(5);
         box2.showVolume();
 
-        Person man = new Person();
-        Person woman = new Person();
-        Person child = new Person();
+        Person man = new Person("john", 45);
+        Person woman = new Person("helen", 40);
+        Person child = new Person("ted", 10);
 
-        man.name = "john";
-        man.age = 45;
-        man.weight = 85.0;
-
-        woman.name = "helen";
-        woman.age = 40;
-        woman.weight = 51.5;
-
-        child.name = "ted";
-        child.age = 10;
-        child.weight = 20.3;
-
-        System.out.println((man.age + woman.age + child.age) / 3);
+        System.out.println((man.getAge() + woman.getAge() + child.getAge()) / 3);
 
         Dog dog = new Dog();
         dog.name = "Spike";
@@ -44,5 +32,12 @@ public class Main {
 
         Monster monster = new Monster();
         monster.voice();
+
+        Box current = new Box(10);
+//        Box another = new Box(current);
+//        System.out.println(current.compare(another));
+        Box another = current.increase();
+        current.showVolume();
+        another.showVolume();
     }
 }
