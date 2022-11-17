@@ -43,5 +43,7 @@ public class Main {
         System.out.println(MyMath.length(7));
         System.out.println(MyMath.area(5));
         System.out.println(MyMath.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+
     }
 }
