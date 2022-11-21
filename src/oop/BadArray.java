@@ -1,8 +1,10 @@
 package oop;
 
+import java.util.ArrayList;
+
 public class BadArray {
     public static void main(String[] args) {
-        MyArrayList employees = getEmployees();
+        ArrayList<String> employees = getEmployees();
 //        String[] employees = getEmployees();
 //        String[] newArray = new String[employees.length + 1];
 //        for (int i = 0; i < employees.length; i++) {
@@ -25,9 +27,11 @@ public class BadArray {
         employees.remove(2);
 
 //        for (String employee : employees) {
-        for (int i = 0; i < employees.getSize(); i++) {
-            System.out.println(employees.get(i));
+        for (String employee : employees) {
+            System.out.println(employee);
         }
+
+
     }
 
     //    private static String[] getEmployees() {
@@ -39,8 +43,18 @@ public class BadArray {
 //        employees[4] = "emma";
 //        return employees;
 //    }
-    private static MyArrayList getEmployees() {
-        MyArrayList employees = new MyArrayList();
+//    private static MyArrayList getEmployees() {
+//        MyArrayList employees = new MyArrayList();
+//        employees.add("john");
+//        employees.add("nick");
+//        employees.add("max");
+//        employees.add("olivia");
+//        employees.add("emma");
+//        return employees;
+//    }
+
+    private static ArrayList<String> getEmployees() {
+        ArrayList<String> employees = new ArrayList<>();
         employees.add("john");
         employees.add("nick");
         employees.add("max");
