@@ -11,6 +11,10 @@ public class CatFamily {
         this.canEatPerson = canEatPerson;
     }
 
+    public void eat() {
+        System.out.println("Кушаю");
+    }
+
     public int getLegs() {
         return legs;
     }

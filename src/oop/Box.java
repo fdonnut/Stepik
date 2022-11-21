@@ -23,6 +23,10 @@ public class Box {
         this(another.length, another.width, another.height);
     }
 
+    public void showInfo() {
+        System.out.println("Length: " + length + " Width: " + width + " Height: " + height);
+    }
+
     Box copy() {
         return new Box(this.length, this.width, this.height);
     }

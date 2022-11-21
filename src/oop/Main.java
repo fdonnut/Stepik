@@ -55,5 +55,10 @@ public class Main {
         System.out.println(age);
         Person person = new Person(name, age);
         System.out.println(person.getName() + " " + person.getAge());
+
+        Box box = new Box(10);
+        WeightBox weightBox = new WeightBox(15, 20);
+        box.showInfo();
+        weightBox.showInfo();
     }
 }
